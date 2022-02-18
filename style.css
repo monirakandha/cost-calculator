@@ -1,0 +1,14 @@
+.lefr-side-img img{
+    width: 100%;
+}
+
+/* responsive code for tablet and mobile  */
+
+@media (max-width: 768px) {
+    button#savingButton {
+        width: 100%;
+    }
+    button#calucate_button {
+        width: 100%;
+    }
+}

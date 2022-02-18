@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="style.css" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/a0a8d45079.js" crossorigin="anonymous"></script>
+    <title>Income Checker</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h2 class="text-center mt-8 mb-5">My Income Expence Checker <span><i class="fas fa-dollar-sign"></i></span></h2>
+            <div class="row">
+                <!-- left image side  -->
+              <div class="col-sm-12 col-md-6 col-lg-6 mx-auto">
+                <div class="lefr-side-img">
+                    <!-- left image source  -->
+                    <img src="img/money.jpg" alt="" srcset="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6 mx-auto">
+                <div class="right-side-cal">
+                    <!-- income calucation area  -->
+                    <div class="mb-3 row">
+                        <h4 class="text-center" >income</h4>
+                        <label for="inputIncome" class="col-sm-2 col-form-label mx-auto">Income</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputIncome">
+                    </div>
+                </div>
+            <!-- expenese are -->
+                <div class="mb-3 row">
+                    <h4 class="text-center">Expenses</h4>
+                    <label for="inputFood" class="col-sm-2 col-form-label mx-auto">Food</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputFood">
+                </div>
+            </div>
+            <!-- rent area  -->
+            <div class="mb-3 row">
+                <label for="inputRent" class="col-sm-2 col-form-label mx-auto">Rent</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputRent">
+            </div>
+        </div>
+        <!-- colthes area  -->
+        <div class="mb-3 row">
+            <label for="inputClothes" class="col-sm-2 col-form-label mx-auto">Clothes</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputClothes">
+            </div>
+        </div>
+        <!-- calculation button  -->
+        <div class="d-grid col-6 mx-auto">
+            <button id="calucate_button" class="btn btn-primary" type="button">Calculate</button>
+        </div>
+        <!-- total expense area  -->
+        <h2 class="text-center mt-5" id="totalexpense">Total Expense :<span id="expenseMoney">0</span></h2>
+        <!-- total remaning balance area -->
+        <h2 class="text-center mt-5" id="remaningbalance">Balance :<span id="balanceMoney">0</span></h2>
+        <!-- save area  -->
+        <div class="container">
+            <div class="row savearea">
+              <div class="d-grid col-md-6 mx-auto">
+                <div class="mb-3 row">
+                    <label for="inputSave" class="col-sm-2 col-form-label mx-auto">Save</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputSave">
+                    </div>
+                </div>
+              </div>
+                <div class="col-md-1">
+                    <h5 class="text-center">%</h5>
+                </div>
+                <div class="col-md-5 mx-auto">
+                  <button class="btn btn-primary btn-lg btn-block" type="button" id="savingButton">Save</button>
+                </div>
+              <!-- total save area  -->
+                <h2 class="text-center mt-5" id="totalesave">Saving Amount:<span id="savingMoney">0</span></h2>
+                <!-- After savingtotal remaning balance area -->
+                <h2 class="text-center mt-5" id="savebalance">Remaning Balance:<span id="remainingMoney">0</span></h2>
+            </div>
+          </div>
+    </div>
+    </section>
+<script src="js/script.js"></script>
+</body>
+</html>
